@@ -21,6 +21,10 @@ use Illuminate\Http\Request;
 class BookingController extends Controller
 {
     private $repository;
+     /**
+     * BookingController constructor.
+     * @param BookingRepository $bookingRepository
+     */
     // The  class into the current class so that its methods can use the functionality provided by the BookingRepository class
     public function __construct(BookingRepository $bookingRepository)
     {
