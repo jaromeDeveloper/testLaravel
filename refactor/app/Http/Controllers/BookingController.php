@@ -135,6 +135,7 @@ class BookingController extends Controller
      */
     public function getHistory(Request $request)
     {
+        $user = $request->user();
         if (!$user) {
 
             // If the user is not found, return a 404 response with an error message
